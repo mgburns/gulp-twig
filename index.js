@@ -39,6 +39,7 @@ module.exports = function (options) {
             twig = Twig.twig,
             twigOpts = {
                 path: file.path,
+                data: String(file.contents),
                 async: false
             },
             template;
